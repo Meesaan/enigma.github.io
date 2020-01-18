@@ -3,11 +3,11 @@ main:
   - title: "About"
     url: /about/
   - title: "Machine Learning"
-    url: /categories/machine-learning/
+    url: /machine-learning/
+  - title: "Deep Learning"
+    url: /deep-learning/
   - title: "Natural Language Processing"
     url: /natural-language-processing/
-  - title: "Big Data Analytics"
-    url: /big-data-analytics/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
