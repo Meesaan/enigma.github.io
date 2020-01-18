@@ -10,7 +10,7 @@ excerpt: "Data Science, Supervised Learning"
 
 # This is a Kaggle project tutorial that predicts Ames Iowa houses.
 
-Head to [Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview) to get a full description of this dataset.  
+Head to [Kaggle.com](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview) to get a full description of this dataset.  
 
 
 ## 1. Generate an idea  

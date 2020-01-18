@@ -1,5 +1,5 @@
 ---
-title: "Introduction Page for this Portfolio"
+title: "Fashion Mnist, CNN"
 category: DL
 tags: [Data Science]
 date: 2018-02-18

@@ -1,5 +1,5 @@
 ---
-title: "Linear Regression"
+title: "Intuitions Behind Linear Regression Models: Daimonds Dataset."
 category: ML
 tags: [Data Science]
 date: 2018-02-18
