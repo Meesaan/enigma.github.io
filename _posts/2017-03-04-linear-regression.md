@@ -1620,7 +1620,7 @@ Some of the methods for finding a correct fit is Bagging, Boosting and Regularis
 ### 4c.1. Ridge Regression
 In the example above, we have assumed that the dataset presented to OLS has high bias. What about in situations where the line captures the true nature of the train dataset? (I know this is inconceivable but walk with me). In other words, the model has relatively low bias, high variance? Ridge regression also known as L2 regularisation, provides a solution. The idea of ridge regression is to find a line that does not fit to the train data so well by shrinking its parameters towards zero. Yes, it intentionally reduces fitness. This objective is to help it generalise well to unseen data. It does this by introducing a small amount of bias when fitting a line. Because of the introduced amount of bias, a significant drop in variance is also achieved. When OLS estimates the values of its parameters, it minimises error by summing the square residuals. However, in ridge regression, it does the same thing but adds  ***λ * β<sup>2</sup>***, also known as ridge regression penalty.  
 
-    <img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/ridge.png">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/ridge.png">
 
 By intuition, when λ is 0, we still have OLS. However, as λ increases, fitness reduces. How then can we decide the optimal value of λ? Different values are tried in cross-validation to determine the value that results in the least amount of variance.
 We should not expect it to perform better in our diamonds project because we suspect our dataset to have high bias already.  
