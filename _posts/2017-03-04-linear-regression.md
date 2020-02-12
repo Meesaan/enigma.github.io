@@ -13,13 +13,13 @@ excerpt: "Data Science, Supervised Learning"
 
 ### What is Linear Regression?  
 Linear regression is one of the most widely known modeling techniques in machine learning. It is usually among the first few topics people pick while learning predictive modeling. It is a method of ***predicting continuous values***, after investigating a ***linear relationship*** between independent variables ***X*** and a dependent or response variable ***Y***. In this type of regression, the dependent variables are continuous values while the independent variables can be either continuous, discrete or even categorical. The nature of the regression or relationship line is linear in shape, hence the name.
-> Mathematically, linear regression model is expressed as:  
- <img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/formula.png"  
-      where y<sub>i</sub> is an instance of y, α -the intercept of the line, indicating the value of Y when X is equal to zero, β -its slope, ε<sub>i</sub> -its instance error and X-independent variable. α and β are generally referred to as the coefficients.
+> Mathematically, linear regression model is expressed as:    
+ <img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/formula.png">
+where y<sub>i</sub> is an instance of y, α -the intercept of the line, indicating the value of Y when X is equal to zero, β -its slope, ε<sub>i</sub> -its instance error and X-independent variable. α and β are generally referred to as the coefficients.
 
 Linear Regression makes predictions by using this formula to fit a straight line to the data points in such a way that the differences between the distances of the data points from the line is minimised. Let me explain what this means literarily. Say we make a plot between carats and price from the diamonds dataset. We may get a graph as shown below.  
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/linear_regg.png"
+<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/linear_regg.png">
 
 The linear line, known as best fit line, tries to draw a line in such a way that it passes through all the data points. In this case, it cannot do so without the lines becoming curvy or non-linear (This would be a non-linear regression which is out of scope of this study). Linear Regression, however, uses α and β to find the best straight line that is as closest to the points as possible. (You may have noticed that these coefficients of the line plays the most vital role in the position of the line). The difference between the best fit line and a data point is known as the error or residual or cost function. The line created above is therefore the  best line it could get with the least amount of error - hence the name "best fit line". This right here is what linear regression is all about- minimising the total amount of error between data points and its best fit line. If at this point you are asking; (a.)how can one minimise errors? (b.) How then, do we find the best values of alpha and beta in such a way that the error is minimised in order to achieve the best fit line? Then come along with me.
 
@@ -321,7 +321,7 @@ plt.show()
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_9_0.png"
+<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_9_0.png">
 
 
 
@@ -332,7 +332,7 @@ g = sns.pairplot(df)
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_11_0.png"
+<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_11_0.png">
 
 
 
@@ -350,7 +350,7 @@ plt.show()
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_13_0.png"
+<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_13_0.png">
 
 
 Wow! Looks like a tornado brewing. Anyway, can you see those two J colored diamonds at the top right? Good! They have the highest number of carats in the dataset, hence some of the highly priced diamonds. However, you can see that they are fairly cut. What does that tell you? That the type of cut does not really matter in terms of price? Well...  not necessarily because most of the expensive ones have ideal, premium and good cuts! It would however, seem like buyers do not care so much about color.
@@ -365,7 +365,7 @@ plt.show()
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_16_0.png"
+<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_16_0.png">
 
 
 
@@ -375,7 +375,7 @@ plt.show()
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_17_0.png"
+<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_17_0.png">
 
 
 
@@ -385,7 +385,7 @@ plt.show()
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_18_0.png"
+<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_18_0.png">
 
 
 
@@ -395,7 +395,7 @@ plt.show()
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_19_0.png"
+<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_19_0.png">
 
 
 
@@ -405,7 +405,7 @@ plt.show()
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_20_0.png"
+<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_20_0.png">
 
 
 
@@ -415,7 +415,7 @@ plt.show()
 ```
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_21_0.png"
+<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/output_21_0.png">
 
 
 
@@ -1618,8 +1618,9 @@ As a data scientist, you want your model to have low bias as well as low varianc
 Some of the methods for finding a correct fit is Bagging, Boosting and Regularisation. In this section, we will treat three Regularisation methods. They are; Ridge Regression, Lasso Regression and ElasticNet. Other non-linear Regularization methods will be discussed in later posts.
 
 ### 4c.1. Ridge Regression
-In the example above, we have assumed that the dataset presented to OLS has high bias. What about in situations where the line captures the true nature of the train dataset? (I know this is inconceivable but walk with me). In other words, the model has relatively low bias, high variance? Ridge regression aslo known as L2 regularisation, provides a solution. The idea of ridge regression is to find a line that does not fit to the train data so well by shrinking its parameters towards zero. Yes, it intentionally reduces fitness. This objective is to help it generalise well to unseen data. It does this by introducing a small amount of bias when fitting a line. Because of the introduced amount of bias, a significant drop in variance is also achieved. When OLS estimates the values of its parameters, it minimises error by summing the square residuals. However, in ridge regression, it does the same thing but adds  ***λ * β<sup>2</sup>***, also known as ridge regression penalty.
-<img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/ridge.png">
+In the example above, we have assumed that the dataset presented to OLS has high bias. What about in situations where the line captures the true nature of the train dataset? (I know this is inconceivable but walk with me). In other words, the model has relatively low bias, high variance? Ridge regression also known as L2 regularisation, provides a solution. The idea of ridge regression is to find a line that does not fit to the train data so well by shrinking its parameters towards zero. Yes, it intentionally reduces fitness. This objective is to help it generalise well to unseen data. It does this by introducing a small amount of bias when fitting a line. Because of the introduced amount of bias, a significant drop in variance is also achieved. When OLS estimates the values of its parameters, it minimises error by summing the square residuals. However, in ridge regression, it does the same thing but adds  ***λ * β<sup>2</sup>***, also known as ridge regression penalty.  
+
+    <img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/ridge.png">
 
 By intuition, when λ is 0, we still have OLS. However, as λ increases, fitness reduces. How then can we decide the optimal value of λ? Different values are tried in cross-validation to determine the value that results in the least amount of variance.
 We should not expect it to perform better in our diamonds project because we suspect our dataset to have high bias already.  
@@ -1672,8 +1673,9 @@ r2_score(ridge_predict, y_test)
 As noted earlier, OLS model already underfits, hence there would be no need to add more bias. This is why we have the same result as the OLS model.
 
 ### 4c.2. Lasso Regression
-Lasso regression also known as L1 regularisation is somewhat similar to ridge regression in that they both add penalty to least squares. However, where ridge squares β, lasso estimates the absolute value of β.
- <img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/lasso.png">
+Lasso Regression also known as L1 Regularisation is somewhat similar to ridge regression in that they both add penalty to least squares. However, where ridge squares β, lasso estimates the absolute value of β.  
+
+  <img src="{{ site.url }}{{ site.baseurl }}/images/diamonds/lasso.png">
 
 
 LASSO - Least Absolute Shrinkage and Selection Operator is a powerful method that perform two main tasks - regularisation and feature selection. The LASSO method puts a constraint on the sum of the absolute values of the model parameters. The sum has to be less than a fixed value (upper bound). In order to do so the method applies a shrinking (regularization) process where it penalizes the
@@ -1781,6 +1783,7 @@ r2_score(elastic_pred, y_test)
 ### Conclusion.
 We have come to the end of our Linear Regression tutorial. If you understand all the algorithms mentioned here, then you are at an intermediate level. If you can create the mathematical deductions, well, what an expert. Kudos to you all.
 On a serious note, we have learnt about Linear Regression and also reviewed its flaws which predominantly refers to its inherent high bias nature. The only solution for an underfitting model is to use a more complex model as is our case study. If it were overfitting, then L1 and L2 regularisation would have produced better results.
+Next is classification models. [Link](https://meesaan.github.io/enigma.github.io/ml/iris/)
 
 Thank you for reading, Bye for now.
 
