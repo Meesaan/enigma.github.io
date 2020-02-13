@@ -2,7 +2,7 @@
 title: "Introduction to Machine Learning"
 category: ML
 tags: [Supervised Learning, Unsupervised Learning]
-date: 2017-02-18
+date: 2018-02-18
 header:
   image: "/images/ml1.jpg"
 excerpt: "Data Science, Supervised Learning"

@@ -2,7 +2,7 @@
 title: "Linear Regression Models: Diamonds Dataset."
 category: ML
 tags: [Linear Regression, Gradient Descent, Ridge, Lasso, ElasticNet]
-date: 2017-03-04
+date: 2018-03-04
 header:
   image: "/images/lr1.jpg"
 excerpt: "Supervised Learning"
