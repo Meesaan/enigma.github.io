@@ -27,7 +27,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 500
+words_per_minute         : 300
 comments:
   provider               : "disqus" # (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Misan Daibo"
   avatar           : "/images/dog.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Professional in machine learning models, Deep Learning & NLP."
+  bio              : "Professional in machine learning models, Deep Learning & NLP at Horizon Frame."
   location         : "Liverpool, UK."
   email            :
   links:
@@ -126,7 +126,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/ml-magazine"
+      url: "https://github.com/Meesaan"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
