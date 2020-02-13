@@ -12,7 +12,7 @@ While I would be going through several use cases and examples, I would lay empha
 
 *Data cleaning, manipulation and explorative data analysis (visual and statistical) with Pandas.*
 
-*DATA VISUALIZATION with Matplotlib, Seaborn and Plotly.*
+*Data visualisation with Matplotlib, Seaborn and Plotly.*
 
 *Supervised data modeling  with SKlearn such as; Regression, Logistic Regression, KNN, SVM, Decision trees, Random Forests, Ensemble methods, Naive Bayes, boosting and bagging. Along with in-depth explanation.*
 
